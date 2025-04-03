@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ett bokningssystem för Ristorante Primavera">
+  <link href="booking.css" type="text/css" rel="stylesheet">
+  <title>Booking</title>
+</head>
+<body>
+  <div>
+    <form>
+      <!-- Gör bilden/logan till en länk -->
+      <a href="index.html"><img src="/pictures/logo.png" alt="logo" id="logo"></a>
+      <div id="bookinginfo">
+        <h1>Boka</h1>
+        <fieldset>
+          <legend>Namn</legend>
+          <input id="name" name="namn" placeholder="namn">
+        </fieldset>
+        <fieldset>
+          <legend>Antal Gäster</legend>
+          <select id="gäster" name="gäster">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>fler än 7</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Datum</legend>
+          <input id="date" type="date" min="2024-09-10" max="2024-11-10">
+        </fieldset>
+      </div>
+      <h2>Betalning</h2>
+      <div id="payment">
+        <div class="payment form">
+          <h3 class="checkout">Email</h3>
+          <input id="useremail" name="email" type="email" required>
+          <h4 class="checkout">Bankkort/Kortnummer</h4>
+          <input id="creditcard" name="creditcardnumber" pattern="" placeholder="1111-2222-4444-5555" required>
+          <h5 class="checkout">Telefonnummer</h5>
+          <input id="phonenumber" type="tel" minlength="9" maxlength="18" placeholder="+467-0856-3321" pattern="">
+        </div>
+        <div id="button">
+          <button id="btn">
+            Betala
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

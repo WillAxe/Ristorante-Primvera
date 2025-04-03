@@ -1,0 +1,105 @@
+body{
+  margin:0 0 0 0;
+  background-size: 100vw 500vh;
+  background-image:url(/pictures/wood.jpg);
+  background-repeat: no-repeat;
+  background-color:#706646
+}
+
+#headertop{
+  background-color:rgba(244, 244, 244, 0.7);
+
+}
+
+main{
+  color:#ffffff;
+}
+
+article{
+  background-color:rgba(24, 24, 24, 0.5)
+}
+
+h1{
+  text-align: center;
+  font-size:7em;
+  margin:0 0 0 0;
+}
+ p{
+  text-align: center;
+  margin: 6px 0 40px 0;
+ }
+
+table{
+  border-collapse:collapse;
+  display:flex;
+  justify-content: center;
+
+}
+
+td{
+  border:3px solid #000000;
+  padding: 15px 15px 15px 15px;
+  font-size:1em;
+}
+
+th{
+  font-size:1.2em;
+}
+
+.menutitles{
+  font-size: 2em;
+  text-align: center;
+  margin: 15px 0 10px 0;
+}
+
+
+ol{
+  color:#ffffff;
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+li{
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-top:2px solid #e7ce75;
+}
+
+.bottom{
+  border-bottom: 2px solid #e7ce75;
+}
+
+/* media query för tablets */
+
+@media(max-width:660px){
+  td{
+    padding:10px 10px 10px 10px;
+  }
+}
+
+/* media query för mobil */
+
+@media (max-width:500px){
+
+  h1{
+    font-size:4em;
+    margin-bottom: 0;
+  }
+
+  
+
+  #menutitles{
+    font-size: 1.5em;
+  }
+
+  #logo{
+    transform: scale(0.6);
+  }
+
+  table{
+  transform: scale(0.63);
+  font-size:1.25em;
+  font-weight: bolder;
+  }
+}

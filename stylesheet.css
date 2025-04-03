@@ -1,0 +1,103 @@
+body{
+  background-color:#231710;
+  background-image:url(pictures/background-image.webp);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  color:#ffffff;
+  margin: 0 0 0 0;
+}
+
+#logo{
+  font-size:medium;
+  color: #000000;
+}
+
+#navbar{
+  background-color:rgba(244, 244, 244, 0.7);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav{
+  flex-grow: 1;
+  display:flex;
+  justify-content: space-evenly; 
+ 
+}
+
+.navlink{
+  color:#000000;
+}
+/* Ser till att h1 tar upp allt utrymme för att pressa ner resterande av innehållet */
+#overlay{
+  bottom: 100vh;
+  height: 74vh;
+  background-color:rgba(24, 24, 24, 0.5);
+}
+
+.title{
+  text-align: center;
+}
+
+h1{
+  color:#ffffff;
+  font-style: italic;
+  font-size: 7em;
+  margin-bottom: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#greeting{
+  color: #ffffff;
+  font-weight:bolder;
+  font-size: 1.6em;
+}
+
+li{
+  padding-bottom: 15px;
+}
+
+footer{
+  display:flex;
+  align-items: center;
+  height: 200px;
+  bottom: 0%;
+  width:100%;
+  background-color:#dad99a;
+  color:#000000;
+}
+
+address{
+font-size: larger;
+font-weight: bolder;
+  flex-grow:1;
+  display:flex;
+  justify-content: space-around;
+}
+
+
+
+/* Css för mobibl */
+
+@media (max-width:500px){
+  #logo{
+    transform: scale(0.6);
+    color:#000000;
+    font-size:2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h1{
+  text-align:center;
+  font-size:4em;
+  }
+
+  #greeting{
+    margin-top:0;
+  }
+
+  #overlay{
+    height:100vh
+  }
+} 

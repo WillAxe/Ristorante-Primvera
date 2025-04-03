@@ -1,0 +1,86 @@
+body{
+  background-image:url(pictures/booking\ background.jpg);
+  background-size: 100vw;
+  display:flex;
+  justify-content: center;
+}
+
+#logo{
+  transform:scale(0.8);
+  font-size: 1.7em;
+  color:#edf7d2;
+}
+
+div{
+width:90vw;
+background-color:#82204a;
+color:#edf7d2;
+}
+
+#bookinginfo{
+  width:100%
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align:center;
+}
+
+
+#useremail{
+  background-color:#ffffff;   
+  border: outset #c9c19f;
+ 
+}
+
+#creditcard{
+  background-color:#ffffff;
+  border: outset #c9c19f;
+}
+
+#phonenumber{
+  background-color:#ffffff;
+  border: outset #c9c19f;
+  margin-bottom: 40px;
+}
+
+.checkout{
+  font-size: 1em;
+}
+
+#button{
+  display:flex;
+  justify-content: center;
+}
+
+label{
+  color:transparent;
+}
+
+#btn{
+  outline: none;
+  cursor: pointer;
+  border: outset #c9c19f 2px;
+  border-radius: 4px;
+  height:30px;
+  width:15em;
+  background-color:#ffffff;
+  color:#494331;
+}
+
+@media (max-width:500px){
+  #logo{
+    transform: scale(0.7);
+    font-size: 2em;
+    color:#edf7d2;
+  }  
+  
+  form{
+    background-color: #82204a;
+    height:100vh;
+  }
+
+}
